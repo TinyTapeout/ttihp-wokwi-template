@@ -89,6 +89,25 @@ module dff_cell (
 endmodule
 
 (* keep_hierarchy *)
+module dffr_cell (
+    input wire clk,
+    input wire d,
+    input wire r,
+    output reg q,
+    output wire notq
+    );
+
+    assign notq = !q;
+
+    always @(posedge clk or posedge r) begin
+        if (r)
+            q <= 0;
+        else
+            q <= d;
+    end
+endmodule
+
+(* keep_hierarchy *)
 module dffsr_cell (
     input wire clk,
     input wire d,
