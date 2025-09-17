@@ -55,6 +55,26 @@ module nand_cell (
 endmodule
 
 (* keep_hierarchy *)
+module nor_cell (
+    input wire a,
+    input wire b,
+    output wire out
+    );
+
+    assign out = !(a | b);
+endmodule
+
+(* keep_hierarchy *)
+module xnor_cell (
+    input wire a,
+    input wire b,
+    output wire out
+    );
+
+    assign out = !(a ^ b);
+endmodule
+
+(* keep_hierarchy *)
 module not_cell (
     input wire in,
     output wire out
