@@ -17,6 +17,7 @@ jobs:
         uses: TinyTapeout/tt-gds-action@ttihp26a
         with:
           pdk: ihp-sg13g2
+          librelane-version: 3.0.0.dev44
 
   viewer:
     needs: gds
