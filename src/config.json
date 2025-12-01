@@ -41,9 +41,6 @@
   "RUN_KLAYOUT_XOR": 0,
   "RUN_KLAYOUT_DRC": 0,
 
-  "//": "Exclude standard cells with issues",
-  "EXTRA_EXCLUDED_CELLS": ["sg13g2_sdfbbp_1"],
-
   "//": "Don't put clock buffers on the outputs",
   "DESIGN_REPAIR_BUFFER_OUTPUT_PORTS": 0,
 
